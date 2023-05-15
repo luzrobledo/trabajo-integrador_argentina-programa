@@ -1,0 +1,397 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Montserrat;
+}
+
+li,
+a{
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar{
+    padding: 0.5rem 2rem;
+}
+.nav-link{
+    margin: 1rem;
+    padding: 0 1rem;
+    font-weight: bold;
+    color: white;
+}
+.nav-link:hover{
+    border-radius: 3px;
+    color: black;
+    background-color: white;
+}
+.nav-link:focus{
+    border-radius: 3px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-toggler{
+    margin-left: auto;
+    background-color: rgb(255, 255, 255);
+} 
+@media screen and (max-width: 992px){
+    .navbar-brand-screen{
+        display: none;
+    }
+    .login-nav{
+        margin: 1rem 0;
+    }
+}
+@media screen and (min-width: 992px){
+    .navbar-brand-mobile{
+        display: none;
+    }
+}
+
+/*Log in*/
+.login{
+    display: none;
+    position: absolute;
+    right: 4rem;
+    width: 300px;
+    padding: 1.5rem;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    background-color: black;
+}
+.login-text{
+    color: violet;
+}
+
+@media screen and (max-width: 992px){
+    .login{
+        top: 4rem;
+        right: 10vw;
+    }
+}
+
+
+/* Home Intro */
+.home-intro{
+    height: 90vh;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.479),
+        rgba(0, 0, 0, 0.671)
+        );
+}
+.module-home-intro{
+    background-image: url(assets/slider-1.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 2px 10px grey;
+}
+
+.intro-title{
+    font-size: 3rem;
+    font-weight: 600;
+    color: white;
+}
+.btn-intro{
+    margin: 20px;
+    padding: 1rem 1.5rem;
+}
+@media screen and (max-width: 768px){
+    .home-intro{
+        height: 60vh;
+    }
+    .intro-title{
+        font-size: 2rem;
+    }
+}
+
+/* Info */
+.secondary-title{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.pre-title{
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.text{
+    font-size: 16px;
+}
+
+/* Banner */
+.module-banner{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.479),
+        rgba(0, 0, 0, 0.671)
+        ),url(assets/banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: 0 4px 12px grey;
+}
+.banner{
+    height: 14rem;
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+.banner-btn{
+    background-color: black;
+}
+@media screen and (max-width: 1200px){
+    .module-banner{
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.418),
+            rgba(0, 0, 0, 0.836)
+            ),url(assets/banner-max-width.jpg);
+    }
+}
+
+/* Cube */
+.module-cube{
+    margin: 0 50px;
+    padding: 4rem 0;
+}
+.cube,
+.mask{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.subtitle{
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+@media screen and (max-width: 992px){
+
+    .module-cube{
+        margin: 0 20px;
+    }
+    .cube,
+    .mask{
+        text-align: center;
+    }
+    .cube-img1{
+        margin: 1rem 0;
+    }
+    .cube-img2{
+        display: none;
+    }
+}
+
+/* Why vegan */
+.module-why-vegan{
+    box-shadow: 0 2px 10px grey;
+    margin-bottom: 8px;
+}
+.why-vegan{
+    color: white;
+    padding: 5rem 0 3rem 0;
+}
+@media screen and (max-width: 1200px){
+    .video{
+        width: 740px;
+        height: 460px;
+    }
+}
+@media screen and (max-width: 768px){
+    .video{
+        width: 540px;
+        height: 360px;
+    }
+}
+@media screen and (max-width: 576px){
+    .video{
+        width: 340px;
+        height: 160px;
+    }
+}
+
+
+/* Contact form*/
+.module-contact-info{
+    padding: 4rem 30px;
+    background-color: rgb(247, 247, 247);
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 6rem;
+    padding: 2.5rem 2rem;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 1px 15px rgb(202, 202, 202);
+}
+
+.av-groups{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+@media screen and (max-width: 992px){
+    .form{
+        margin: 0 1rem;
+        padding: 1.5rem 1rem;
+    }
+}
+
+/* Contact cities */
+.av-cities{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.city-link{
+    font-size: 0.9rem;
+    color: black;
+}.city-link:hover{
+    text-decoration: underline;
+    color: black;
+}
+.av-cities-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 572px){
+    .av-cities{
+        display: none;
+    }
+    .av-cities-mobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .city-link-mobile{
+        font-size: 0.8rem;
+        color: black;
+    }.city-link-mobile:hover{
+        text-decoration: underline;
+        color: black;
+    }
+}
+
+
+
+/* Personal Introduction */
+.btn-personal-introduction{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    border: none;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: rgba(37, 37, 110, 0.466);
+}
+.personal-introduction{
+    display: none;
+    position: fixed;
+    margin-left: 100px;
+    bottom: 100px;
+    width: 45%;
+    height: 40rem;
+    padding: 3rem;
+    border-radius: 50px;
+    overflow: auto;
+    font-family: 'Oxygen', sans-serif;
+    color: white;
+    background-color: rgb(32, 32, 139);
+}
+.personal-introduction h2{
+    font-size: 1.8rem;
+    margin: 15px 0 20px 0;
+}
+.personal-introduction p{
+    font-size: 1.2rem;
+}
+
+.personal-introduction::-webkit-scrollbar{
+    display: none;
+}
+@media screen and (max-width: 1200px){
+    .personal-introduction{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 576px){
+    .personal-introduction{
+        width: 80%;
+        bottom: 120px;
+        margin-left: 10px;
+    }
+    .personal-introduction h1{
+        font-size: 1.8rem;
+    }
+    .personal-introduction h2{
+        font-size: 1.4rem;
+    }
+    .personal-introduction p{
+        font-size: 1rem;
+    }
+}
+
+
+
+/* Footer */
+.footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+.footer-text{
+    font-size: 0.9rem;
+}
+.footer-top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+
+.social-link{
+    color: white;
+}
+.footer-nav-link{
+    padding: 10px 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.social-link:hover,
+.footer-nav-link:hover{
+    color: rgb(199, 199, 199);
+}
+
+@media screen and (max-width: 768px){
+    .footer-nav{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .footer-top{
+        display: flex;
+        flex-direction: column;
+    }
+}
